@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #787272;
+}
+
+.container {
+    background-color: #f2f2f2;
+    max-height: 100vh;
+    width: 80vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+}
+
+span {
+    position: relative;
+    font-size: 24px;
+}
+
+.creation-page, .outils {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+button {
+    color: black;
+    background-color: #717171;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+button.actif {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+input[type="color"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 80px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border-radius: 8px;
+    border: 4px solid black;
+}
+
+input[type="color"]::-moz-color-swatch {
+    border-radius: 8px;
+    border: 4px solid black;
+}
+
+.contenair-grille {
+    width: 100%;
+    height: 50vmin;
+    display: grid;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    grid-template-columns: repeat(auto-fill, minmax(1em, 1fr)); 
+    grid-template-rows: repeat(auto-fill, minmax(1em, 1fr)); 
+}
+
+.gridCol {
+    background-color: white;
+    border: 1px solid #ddd;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.gridRow {
+    display: flex;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+.creation-page {
+    flex-direction: column;
+    gap: 20px;
+}
+
+#largeur-grille, #hauteur-grille {
+    width: 100%;
+}
+
+button, input[type="color"] {
+    flex: 1;
+}
+

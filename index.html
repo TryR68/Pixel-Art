@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art | Entrainement JS</title>
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="options">
+            <div class="creation-page">
+                <div class="curseur">
+                    <label>
+                        Largeur Grille
+                        <input type="range" id="largeur-grille" min="1" max="35">
+                        <span id="valeur-largeur">00</span>
+                    </label>
+                </div>
+                <div class="curseur">
+                    <label>
+                        Hauteur Grille
+                        <input type="range" id="hauteur-grille" min="1" max="35">
+                        <span id="valeur-hauteur">00</span>
+                    </label>
+                </div>
+            </div>
+            <div class="outils">
+                <button id="creer-grille">Créer la grille</button>
+                <button id="nettoyer-grille">Nettoyer la grille</button>
+                <input type="color" id="choix-couleur">
+                <button id="effacer-btn">Effacer</button>
+                <button id="peindre-btn">Peindre</button>
+            </div>
+        </div>
+        <div class="contenair-grille" id="grille-container"></div>
+        </div>
+    </div>
+    <script src="Scripts/script.js"></script>
+</body>
+</html>
